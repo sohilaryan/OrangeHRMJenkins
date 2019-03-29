@@ -20,6 +20,7 @@ public class Hooks {
 	
 	@After
 	public void end(Scenario scenario) {
+		
 		if (scenario.isFailed() || !scenario.isFailed()) {
 			TakesScreenshot pic = (TakesScreenshot)BaseClass.driver;
 			

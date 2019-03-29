@@ -13,6 +13,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	static Properties prop;
 
+	
 	public static void setUp() {
 
 		initProperties(Constants.filePath);

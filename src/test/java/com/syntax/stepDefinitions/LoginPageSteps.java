@@ -9,7 +9,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-
 public class LoginPageSteps {
 
 	LoginPage login;
@@ -21,6 +20,7 @@ public class LoginPageSteps {
 	   
 	}
 
+	
 	@When("^I enter \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void i_enter_and(String value1, String value2) {
 	    CommonMethods.enterValue(login.userName, value1);
@@ -33,6 +33,7 @@ public class LoginPageSteps {
 	   CommonMethods.click(login.btnLogin);
 	}
 
+	
 	@Then("^I successfully logged in$")
 	public void i_successfully_logged_in() {
 	

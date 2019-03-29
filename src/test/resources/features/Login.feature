@@ -3,8 +3,9 @@ Feature: Login feature
 
   Background: 
     Given OrangeHRM log is displayed
-
+  
   Scenario: Valid Login
+  
     When I enter "admin" and "admin123"
     And I click on login button
     Then I successfully logged in
@@ -16,7 +17,7 @@ Feature: Login feature
 
     Examples: 
       | username | password  | errorMessage             |
-      | admin    | admit     | Invalid credentialss      |
+      | admin    | admit     | Invalid credentials      |
       | Monkey   | admin123  | Invalid credentials      |
       | Monkey   | Monkey123 | Invalid credentials      |
       |          | admin123  | Username cannot be empty |

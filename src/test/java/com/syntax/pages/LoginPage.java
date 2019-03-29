@@ -11,7 +11,7 @@ public class LoginPage extends BaseClass{
 	@FindBy(xpath = "//img[contains(@src,'logo')]")
 	public WebElement logo;
 	
-	@FindBy(id = "txtUsername")
+	@FindBy(id = "xtUsername")
 	public WebElement userName;
 
 	@FindBy(id = "txtPassword")
